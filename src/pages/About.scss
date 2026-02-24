@@ -1,0 +1,29 @@
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-grid__block {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.88;
+}
+
+.about-grid__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
