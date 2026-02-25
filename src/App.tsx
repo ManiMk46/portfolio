@@ -6,6 +6,7 @@ import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Skills } from './pages/Skills'
 import { Contact } from './pages/Contact'
+import { SectionDivider } from './components/SectionDivider'
 
 function App() {
   useEffect(() => {
@@ -40,8 +41,11 @@ function App() {
       <Navbar />
       <main className="app__inner">
         <Home />
+        <SectionDivider />
         <About />
+        <SectionDivider />
         <Skills />
+        <SectionDivider />
         <Contact />
         <Footer />
       </main>
