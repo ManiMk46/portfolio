@@ -13,6 +13,21 @@ function App() {
       event.preventDefault()
     }
 
+    const initTheme = () => {
+      const stored = localStorage.getItem('theme')
+      let theme: 'light' | 'dark'
+      if (stored === 'light' || stored === 'dark') {
+        theme = stored
+      } else {
+        const prefersLight = window.matchMedia
+          ? window.matchMedia('(prefers-color-scheme: light)').matches
+          : false
+        theme = prefersLight ? 'light' : 'dark'
+      }
+      document.body.classList.toggle('theme-light', theme === 'light')
+    }
+    initTheme()
+
     document.addEventListener('copy', handleCopy)
 
     return () => {

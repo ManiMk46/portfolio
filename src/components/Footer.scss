@@ -2,11 +2,10 @@
 .footer {
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 1px solid #111;
+  border-top: 1px solid var(--border);
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   opacity: 0.6;
   text-align: center;
 }
-

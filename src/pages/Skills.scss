@@ -13,10 +13,10 @@
 }
 
 .skills-list > div {
-  border: 1px solid #111;
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.2rem 1rem 1.4rem;
-  background: rgba(5, 5, 5, 0.8);
+  background: var(--surface);
 }
 
 .skills-animation {
@@ -51,4 +51,3 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
-
